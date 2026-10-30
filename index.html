@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A fan-made GeminiFourth appreciation page: their stories, music and a tiny wish garden.">
+<meta name="theme-color" content="#fffdf5">
+
+<title>GeminiFourth | A Little More Than Stardust</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+    <a href="#home" class="logo">little <span>universe.</span></a>
+
+    <div class="nav-links">
+        <a href="#about">Their Story</a>
+        <a href="#projects">Projects</a>
+        <a href="#wish">Make a Wish</a>
+        <a href="#letter" class="nav-pill">A little note ↗</a>
+    </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<header class="hero" id="home">
+    <div class="hero-copy">
+        <div class="eyebrow">A fan-made universe</div>
+
+        <h1>
+            <span class="h1-line">Two stars.</span>
+            <span class="h1-line">One <em>little</em></span>
+            <span class="h1-line">universe.</span>
+        </h1>
+
+        <p class="hero-lead">
+            Some stories become memories. Some characters become comfort.
+            And some duos inspire an entire universe of their own.
+            Welcome to a little corner of the internet made for GeminiFourth.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-dark">Explore their world ↗</a>
+            <a href="#wish" class="btn btn-light">Make a wish ✳</a>
+        </div>
+
+        <ul class="hero-stats" aria-label="At a glance">
+            <li><strong>7</strong><span>stories on the shelf</span></li>
+            <li><strong>2</strong><span>stars, one universe</span></li>
+            <li><strong id="heroCount">0</strong><span>wishes planted</span></li>
+        </ul>
+    </div>
+
+    <div class="hero-art">
+        <div class="collage">
+            <span class="credit">Photo credit to the original owner</span>
+
+            <div class="photo-frame ph" data-initial="GF">
+                <img src="geminifourth.jpeg" alt="GeminiFourth" data-fallback>
+            </div>
+
+            <div class="photo-label label-one">
+                <small>The first star</small>
+                <strong>Gemini ✦</strong>
+            </div>
+            <div class="photo-label label-two">
+                <small>The other star</small>
+                <strong>Fourth ☼</strong>
+            </div>
+
+            <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+                <defs><path id="badgePath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+                <circle cx="60" cy="60" r="58" class="badge__bg"/>
+                <text class="badge__text"><textPath href="#badgePath">fan-made · made with love · geminifourth · </textPath></text>
+                <text x="60" y="70" text-anchor="middle" class="badge__star">✳</text>
+            </svg>
+        </div>
+    </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span>Made of memories</span><b>✳</b>
+        <span>Written in the stars</span><b>✳</b>
+        <span>A little more than stardust</span><b>✳</b>
+        <span>Two stars, one universe</span><b>✳</b>
+        <span>Made of memories</span><b>✳</b>
+        <span>Written in the stars</span><b>✳</b>
+        <span>A little more than stardust</span><b>✳</b>
+        <span>Two stars, one universe</span><b>✳</b>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="about-image reveal">
+        <span class="credit">Photo credit to the original owner</span>
+        <div class="about-photo ph" data-initial="♡">
+            <img src="geminifourth-memory.jpeg" alt="GeminiFourth fan memory" loading="lazy" data-fallback>
+        </div>
+        <div class="image-sticker">a little<br>bit of magic ✳</div>
+    </div>
+
+    <div class="about-copy reveal">
+        <div class="kicker">Beyond the screen</div>
+
+        <h2>Every story leaves a little sparkle.</h2>
+
+        <p>
+            Gemini Norawit and Fourth Nattawat are Thai actors and singers known for bringing
+            memorable characters to life together. From the music-filled hallways of My School
+            President to the more emotional world of Ticket to Heaven, their projects show
+            different sides of their acting.
+        </p>
+
+        <p>
+            This page celebrates their work, their characters, their music, and the stories
+            that fans continue to revisit.
+        </p>
+
+        <div class="about-details">
+            <div class="detail"><strong>Gemini</strong><span>Actor · Singer</span></div>
+            <div class="detail"><strong>Fourth</strong><span>Actor · Singer</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS: ticket stubs -->
+<section class="projects" id="projects">
+    <div class="section-heading reveal">
+        <div>
+            <div class="kicker">The story collection</div>
+            <h2>Different worlds.<br>Unforgettable moments.</h2>
+        </div>
+        <p>From school romances to stories that ask bigger questions, explore some of their memorable screen projects.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="chip is-on" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="together">Together</button>
+        <button class="chip" type="button" data-filter="gemini">Gemini</button>
+        <button class="chip" type="button" data-filter="fourth">Fourth</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+        <article class="project-card reveal" data-group="together">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#e9d8a8" data-initial="My School President">
+                    <img src="my-school-president.jpeg" alt="My School President poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Together</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2022–2023 · Music · Romance</div>
+                    <h3>My School President</h3>
+                    <p>A music club, a student president, and a school romance full of songs and sweet moments.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="together">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#d9e0cf" data-initial="Moonlight Chicken">
+                    <img src="moonlight-chicken.jpeg" alt="Moonlight Chicken poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Together</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2023 · Drama · Romance</div>
+                    <h3>Moonlight Chicken</h3>
+                    <p>A heartfelt story about ordinary lives, unexpected connections, and finding your way.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="together">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#e8d6d1" data-initial="Our Skyy 2">
+                    <img src="our-skyy-2.jpeg" alt="Our Skyy 2 poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Together</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2023 · Special episodes</div>
+                    <h3>Our Skyy 2</h3>
+                    <p>A return to the My School President universe with more moments featuring Tinn and Gun.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="together">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#e6dce9" data-initial="My Love Mix-Up!">
+                    <img src="my-love-mix-up.jpeg" alt="My Love Mix-Up Thailand poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Together</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2024 · Romantic comedy</div>
+                    <h3>My Love Mix-Up!</h3>
+                    <p>A mistaken identity sets off a chain of misunderstandings, feelings, and unexpected romance.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="together">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#e4dfce" data-initial="Ticket to Heaven">
+                    <img src="ticket-to-heaven.jpeg" alt="Ticket to Heaven poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Together</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2026 · Drama · Romance</div>
+                    <h3>Ticket to Heaven</h3>
+                    <p>A more serious story that explores the conflict between faith, expectations, and the heart.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="gemini">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#d8d5cc" data-initial="The Dark Dice">
+                    <img src="the-dark-dice.jpeg" alt="The Dark Dice poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Gemini</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2025 · Gemini's project</div>
+                    <h3>The Dark Dice</h3>
+                    <p>A separate project featuring Gemini in a story with a darker, suspense-driven atmosphere.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card reveal" data-group="fourth">
+            <div class="ticket">
+                <span class="credit">Photo credit to the original owner</span>
+                <div class="project-cover ph" style="--cover:#e9d5ba" data-initial="Scarlet Heart Thailand">
+                    <img src="scarlet-heart-thailand.jpeg" alt="Scarlet Heart Thailand poster" loading="lazy" data-fallback>
+                    <span class="project-tag">Fourth</span>
+                </div>
+                <div class="project-info">
+                    <div class="year">2026 · Fourth's project</div>
+                    <h3>Scarlet Heart Thailand</h3>
+                    <p>A separate period-fantasy project featuring Fourth as Prince Chom Han.</p>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- SPOTLIGHTS -->
+<section class="duo-section">
+    <div class="section-heading reveal">
+        <div>
+            <div class="kicker">Two individual spotlights</div>
+            <h2>Their own kind of magic.</h2>
+        </div>
+        <p>Two performers, two individual journeys, and plenty more to discover beyond their shared projects.</p>
+    </div>
+
+    <div class="people-grid">
+        <article class="person-card gemini reveal">
+            <h3>Gemini.</h3>
+            <p>Actor and singer. Discover his individual screen projects, music, and creative work.</p>
+            <div class="person-number" aria-hidden="true">01</div>
+            <span class="credit credit--card">Photo credit to the original owner</span>
+            <div class="person-photo ph" data-initial="G">
+                <img src="gemini.jpeg" alt="Gemini Norawit" loading="lazy" data-fallback>
+            </div>
+        </article>
+
+        <article class="person-card fourth reveal">
+            <h3>Fourth.</h3>
+            <p>Actor and singer. Explore his individual roles, performances, and musical journey.</p>
+            <div class="person-number" aria-hidden="true">02</div>
+            <span class="credit credit--card">Photo credit to the original owner</span>
+            <div class="person-photo ph" data-initial="F">
+                <img src="fourth.jpeg" alt="Fourth Nattawat" loading="lazy" data-fallback>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- WISH GARDEN -->
+<section class="wish-section" id="wish">
+    <div class="wish-box reveal">
+        <div class="kicker">A tiny wish garden</div>
+        <h2>Plant a little wish<br>in their universe.</h2>
+
+        <p>Every wish grows into a flower. Add a few words if you like, hover or tap a flower to read it.</p>
+
+        <form class="wish-form" id="wishForm" autocomplete="off">
+            <label class="sr-only" for="wishInput">Your wish (optional)</label>
+            <input id="wishInput" type="text" maxlength="80" placeholder="Write a wish (optional)…">
+            <button class="wish-button" type="submit">Plant a wish ✳</button>
+        </form>
+
+        <div class="wish-counter" id="wishCounter" aria-live="polite">Wishes planted: 0</div>
+
+        <div class="garden" id="garden" aria-label="Wish garden">
+            <p class="garden__empty" id="gardenEmpty">Your garden is waiting for its first flower.</p>
+        </div>
+    </div>
+</section>
+
+<!-- LETTER -->
+<section class="letter-section" id="letter">
+    <div class="letter-card reveal">
+        <div class="kicker">A note from this little universe</div>
+        <h2>To the stories that stay with us.</h2>
+
+        <p>
+            Thank you for the characters that make us smile, the songs that bring back memories,
+            and the stories that give us a reason to press play one more time.
+            May every new chapter bring new opportunities, creative adventures, and moments
+            worth celebrating.
+        </p>
+
+        <div class="signature">With appreciation, always. ♡</div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-top">
+        <div>
+            <h2>A little more than stardust ✳</h2>
+            <p>A fan-made corner of the internet, created with care.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">Their Story</a>
+            <a href="#projects">Projects</a>
+            <a href="https://www.gmm-tv.com/" target="_blank" rel="noopener noreferrer">Official GMMTV ↗</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>Made with ♡ by Little Code Universe.</span>
+        <span>
+            Unofficial fan-made website. Not affiliated with or endorsed by Gemini, Fourth, or GMMTV.
+            Names and third-party materials belong to their respective owners.
+            Photo credit to the original owner.          
+        </span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
